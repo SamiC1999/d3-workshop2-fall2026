@@ -74,6 +74,8 @@ git push
 
 **Assignment** (2 or 3 sentences): pick one race. What does the race trace show that a plain chart of lap times would hide?
 
+The race trace shows how the time gap between drivers changes throughout the race, which is harder to understand from a regular lap-time chart. For example, during the British Grand Prix, pit stops and changing track conditions can cause drivers to gain or lose time compared to the reference driver. This makes it easier to see when a driver falls behind, catches up, or changes position relative to another driver.
+
 >
 
 **Bonus** (optional): which race did you add, and why?
