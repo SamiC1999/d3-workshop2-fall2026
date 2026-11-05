@@ -180,7 +180,7 @@ function draw() {
         .data(series, s => s.driver.driver_number)
         .join('path')
         .attr('class', 'trace-line')
-        .attr('stroke', s => s.driver.team_color)
+        .attr('stroke', s => s.driver.color)
         .attr('stroke-dasharray', s => s.driver.dash ? '6 4' : null)
         .transition().duration(duration)
         .attr('d', s => line(s.values.filter(visible)));
@@ -202,7 +202,7 @@ function draw() {
         .data(ends, d => d.driver.driver_number)
         .join('text')
         .attr('class', 'end-label')
-        .attr('fill', d => d.driver.team_color)
+        .attr('fill', d => d.driver.color)
         .attr('dy', '0.35em')
         .text(d => d.driver.name_acronym)
         .transition().duration(duration)
@@ -310,4 +310,4 @@ svg.append('rect')
     });
 
 // TODO STEP 12: in participation.js (at the bottom), listen to 'hoverDriver' and fade the
-// other drivers' bars in chart 2.
+// other drivers' bars in chart 2
